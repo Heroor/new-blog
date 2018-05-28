@@ -1,19 +1,21 @@
 <template>
   <div :class="{
       'banner-wrap': true,
-      'hidden': !bannerSrc
+      'simple': !bannerSrc
     }">
-    <div class="banner-container position--align">
-      <img :src="bannerSrc" ondragstart="return false" class="transition-05">
+    <div class="banner-container position--align-c">
+      <img :src="bannerSrc" ondragstart="return false" class="transition-05 position--align-c">
     </div>
   </div>
 </template>
 
 <script>
+  import img from '@/assets/images/banner.jpg'
+
   export default {
     data() {
       return {
-        bannerSrc: '123',
+        bannerSrc: img,
         title: 'title',
         desc: 'desc'
       }
@@ -23,16 +25,21 @@
 </script>
 
 <style scoped lang="stylus">
+  @import "../style/common.styl"
   .banner-wrap
     position relative
     top -20px
-    height 18px
-    &.hidden
-      overflow hidden
+    height $banner-height
+    overflow hidden
+    &.simple
+      height 20px
     .banner-container
-      height 420px
-      min-height 18px
+      overflow hidden
+      height $banner-height
       width 280%
       border-radius 50% 50% 0 0
-      background #eef7f7
+      background $page-bg
+      img
+        max-width 100vw
+        min-width 760px
 </style>

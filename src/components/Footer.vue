@@ -1,8 +1,12 @@
 <template>
   <div class="footer-wrap">
-    this is footer container
+    <p class="hosted t-a-c" style="line-height: 4">
+      <span>Hosted by</span>
+      <a href="https://pages.coding.me" style="font-weight: bold;">Coding Pages</a>
+    </p>
   </div>
 </template>
+
 
 <script>
   export default {
@@ -13,7 +17,6 @@
 
 <style scoped lang="stylus">
   .footer-wrap
-    border 1px solid red
     margin-top 10px
 </style>
 

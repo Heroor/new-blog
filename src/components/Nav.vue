@@ -28,15 +28,16 @@
 </script>
 
 <style scoped lang="stylus">
+  @import "../style/common.styl"
   .nav-ul
     height 50px
     text-align center
     padding-bottom 18px
     font-size 15px
-    background #89d4a7
+    background $nav-bg
     li
       display inline-block
-      margin 0 12px
+      margin 0 10px
       a
         line-height 48px
         display inline-block
