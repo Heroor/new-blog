@@ -27,7 +27,7 @@
 
 </script>
 
-<style scoped lang="styl">
+<style scoped lang="stylus">
   .nav-ul
     height 50px
     text-align center

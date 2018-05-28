@@ -11,4 +11,4 @@
 
 </script>
 
-<style lang="styl" src="./style/index.styl" />
+<style lang="stylus" src="./style/index.styl" />

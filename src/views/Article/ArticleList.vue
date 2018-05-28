@@ -11,7 +11,7 @@
 
 </script>
 
-<style scoped lang="styl">
+<style scoped lang="stylus">
   .artical-wrap
     height 200px
     border 1px solid green

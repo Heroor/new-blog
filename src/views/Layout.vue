@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scoped lang="styl">
+<style scoped lang="stylus">
  .home-wrap
     font-size 14px
 </style>

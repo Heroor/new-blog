@@ -11,7 +11,7 @@
 
 </script>
 
-<style scoped lang="styl">
+<style scoped lang="stylus">
   .footer-wrap
     border 1px solid red
     margin-top 10px

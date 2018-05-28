@@ -22,7 +22,7 @@
 
 </script>
 
-<style scoped lang="styl">
+<style scoped lang="stylus">
   .banner-wrap
     position relative
     top -20px
