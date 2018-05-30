@@ -2,7 +2,7 @@
   <div class="nav-wrap">
     <ul class="nav-ul">
       <li v-for="(v, i) in navList" :key="i">
-        <router-link :to="v.link">
+        <router-link :to="v.link" class="underline">
           {{v.name}}
         </router-link>
       </li>
