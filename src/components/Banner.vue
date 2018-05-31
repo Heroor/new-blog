@@ -25,7 +25,7 @@
 </script>
 
 <style scoped lang="stylus">
-  @import "../style/common.styl"
+  @import "../style/mix.styl"
   .banner-wrap
     position relative
     top -20px

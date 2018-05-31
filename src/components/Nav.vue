@@ -28,7 +28,7 @@
 </script>
 
 <style scoped lang="stylus">
-  @import "../style/common.styl"
+  @import "../style/mix.styl"
   .nav-ul
     height 50px
     text-align center
@@ -43,5 +43,10 @@
         display inline-block
         padding 0 8px
         text-decoration none
-        color #fff
+        color #d7e2e6
+        &.router-link-active::after
+          width 100%
+          border-radius 1px
+        &.underline::after
+          bottom 8px
 </style>
