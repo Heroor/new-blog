@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Layout from '@/views/Layout'
 import ArticleList from '@/views/Article/ArticleList'
+import ArticleDetail from '@/views/Article/ArticleDetail'
 
 Vue.use(Router)
 
@@ -13,6 +14,10 @@ export default new Router({
       path: '/',
       name: 'ArticleList',
       component: ArticleList
+    }, {
+      path:'/article/*',
+      name: 'article-detail',
+      component: ArticleDetail
     }, {
       path: '/info',
       name: 'info',
