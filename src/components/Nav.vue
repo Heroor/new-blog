@@ -44,7 +44,7 @@
         padding 0 8px
         text-decoration none
         color #d7e2e6
-        &.router-link-active::after
+        &.router-link-exact-active::after
           width 100%
           border-radius 1px
         &.underline::after
