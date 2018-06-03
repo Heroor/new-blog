@@ -12,17 +12,25 @@ export default new Router({
     component: Layout,
     children: [{
       path: '/',
-      name: 'ArticleList',
-      component: ArticleList
-    }, {
-      path:'/article/*',
-      name: 'article-detail',
-      component: ArticleDetail
+      redirect: '/article',
+      alias: '/article',
+      component: {
+        template: '<router-view/>'
+      },
+      children: [{
+        path: '/article',
+        name: 'ArticleList',
+        component: ArticleList
+      }, {
+        path: '/article/:id',
+        name: 'article-detail',
+        component: ArticleDetail
+      }]
     }, {
       path: '/info',
       name: 'info',
       component: {
-        template: '<div>info</div>'
+        template: '<div>info page</div>'
       }
     }]
   }, {

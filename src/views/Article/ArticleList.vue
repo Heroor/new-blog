@@ -22,6 +22,11 @@
             desc: 'this is a article too',
             date: '2018-12-33',
             id: '3'
+          }, {
+            title: '中文',
+            desc: '中文中文中文中文中文中文中文中文中文中文中文中文中文中文',
+            date: '2018-12-23',
+            id: '4'
           }]
         }
       }
@@ -39,7 +44,7 @@
                   </h2>
                   <div class="article__content">
                     <div class="article__left">
-                      <p class="article__desc w-b--b-a">{v.desc}</p>
+                      <p class="article__desc w-b--b-w w-b--b-a">{v.desc}</p>
                       <span class="article__date">{v.date}</span>
                     </div>
                     {
@@ -77,6 +82,7 @@
       &:hover
         box-shadow 0 0 30px rgba(35, 180, 226, 0.2)
       h2
+        font-weight bold
         text-align center
         margin-bottom 30px
   .article__title
@@ -88,7 +94,6 @@
       color $nav-bg
   .article__content
     display flex
-    min-height 80px
   .article__left
     display flex
     flex 1
@@ -97,21 +102,46 @@
   .article__desc
     flex 1
     margin-bottom 20px
+    min-height 50px
     font-size $font-content
     color $font-color-content
   .article__date
     font-size $font-tips
     color #858585
   .article__right
+    display flex
+    align-items center
     margin-left 20px
-  .article__img
     transition(.4s)
-    display block
+  .article__img
     max-width 180px
     max-height 180px
+    display block
     border-radius 10px
-    // @media screen and (max-width 760px){
-      // width 20px
-    // }
+    transition(.4s)
+
+  @media screen and (max-width 640px)
+    .article__content
+      flex-wrap wrap
+      flex-direction column-reverse
+    .article__left
+      flex 1 100%
+    .article__right
+      justify-content center
+      margin 0 0 20px
+    .article__img
+      max-width 200px
+      max-height 200px
+  @media screen and (max-width 300px)
+    .article__img
+      max-width 120px
+      max-height 120px
+  @media screen and (max-width 200px)
+    .article__right
+      margin 0
+    .article__img
+      max-width 0
+      max-height 0
+      transform rotate(360deg)
 </style>
 
