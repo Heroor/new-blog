@@ -1,15 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Layout from '@/views/Layout'
-import ArticleList from '@/views/Article/ArticleList'
-import ArticleDetail from '@/views/Article/ArticleDetail'
+
+const _import = path => () => import('@/views/' + path)
 
 Vue.use(Router)
 
 export default new Router({
   routes: [{
     path: '/',
-    component: Layout,
+    component: _import('Layout'),
     children: [{
       path: '/',
       redirect: '/article',
@@ -20,11 +19,11 @@ export default new Router({
       children: [{
         path: '/article',
         name: 'ArticleList',
-        component: ArticleList
+        component: _import('Article/ArticleList')
       }, {
         path: '/article/:id',
         name: 'article-detail',
-        component: ArticleDetail
+        component: _import('Article/ArticleDetail')
       }]
     }, {
       path: '/info',
