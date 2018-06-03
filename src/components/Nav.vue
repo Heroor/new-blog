@@ -43,7 +43,10 @@
         display inline-block
         padding 0 8px
         text-decoration none
+        transition(.3s)
         color #d7e2e6
+        &:hover
+          color #fff
         &.router-link-active::after
           width 100%
           border-radius 1px
