@@ -7,7 +7,7 @@
         default() {
           return [{
             title: 'one',
-            poster: 'https://blog.benjavan.top/static/images/avatar.jpg',
+            poster: 'static/poster.png',
             desc: 'this is a article',
             date: '2018-12-12',
             id: '1'
@@ -18,7 +18,7 @@
             id: '2'
           }, {
             title: '中文',
-            poster: 'https://blog.benjavan.top/static/images/avatar.jpg',
+            poster: 'static/poster.png',
             desc: 'this is a article too',
             date: '2018-12-33',
             id: '3'
@@ -75,7 +75,7 @@
     padding-bottom 200px
     li
       margin-top 25px
-      padding 30px
+      padding 28px
       border-radius 6px
       background-color #fff
       transition(.3s)
@@ -117,7 +117,8 @@
     max-width 180px
     max-height 180px
     display block
-    border-radius 10px
+    border-radius 8px
+    box-shadow 0 0 15px rgba(0, 0, 0, .1)
     transition(.4s)
 
   @media screen and (max-width 640px)
