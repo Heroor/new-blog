@@ -1,43 +1,22 @@
 <script>
+  import data from '@/service/mock.json'
   export default {
-    functional: true,
-    props: {
-      articleList: {
-        type: Array,
-        default() {
-          return [{
-            title: 'one',
-            poster: 'static/poster.png',
-            desc: 'this is a article',
-            date: '2018-12-12',
-            id: '1'
-          }, {
-            title: 'two',
-            desc: 'this is a article too',
-            date: '2018-12-31',
-            id: '2'
-          }, {
-            title: '中文',
-            poster: 'static/poster.png',
-            desc: 'this is a article too',
-            date: '2018-12-33',
-            id: '3'
-          }, {
-            title: '中文',
-            desc: '中文中文中文中文中文中文中文中文中文中文中文中文中文中文',
-            date: '2018-12-23',
-            id: '4'
-          }]
-        }
+    data() {
+      return {
+        articleList: []
       }
     },
-    render(h, context) {
-      const { articleList } = context.props
+    mounted() {
+      setTimeout(() => {
+        this.articleList = data.mapList
+      }, 100);
+    },
+    render() {
       return (
         <div class="article-wrap">
           <ul class="article__ul">
             {
-              articleList.map((v, i) =>
+              this.articleList.map((v, i) =>
                 <li key={i}>
                   <h2 class="w-b--b-a">
                     <router-link to={'article/' + v.id} class="article__title">{v.title}</router-link>
@@ -72,7 +51,7 @@
     margin 20px auto
     padding 0 10px
   .article__ul
-    padding-bottom 200px
+    padding-bottom 100px
     li
       margin-top 25px
       padding 28px
@@ -118,7 +97,7 @@
     max-height 180px
     display block
     border-radius 8px
-    box-shadow 0 0 15px rgba(0, 0, 0, .1)
+    // box-shadow 0 0 15px rgba(0, 0, 0, .1)
     transition(.4s)
 
   @media screen and (max-width 640px)
