@@ -1,498 +1,303 @@
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
-}
-
-body {
-  margin: 0
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block
-}
-
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  vertical-align: baseline
-}
-
-audio:not([controls]) {
-  display: none;
-  height: 0
-}
-
-[hidden],
-template {
-  display: none
-}
-
-a {
-  background: transparent
-}
-
-a:active,
-a:hover {
-  outline: 0
-}
-
-abbr[title] {
-  border-bottom: 1px dotted
-}
-
-b,
-strong {
+.md b,
+.md strong {
   font-weight: bold
 }
 
-dfn {
+.md dfn {
   font-style: italic
 }
 
-h1 {
+.md h1 {
   font-size: 2em;
   margin: 0.67em 0
 }
 
-mark {
+.md mark {
   background: #ff0;
   color: #000
 }
 
-small {
+.md small {
   font-size: 80%
 }
 
-sub,
-sup {
+.md sub,
+.md sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline
 }
 
-sup {
+.md sup {
   top: -0.5em
 }
 
-sub {
+.md sub {
   bottom: -0.25em
 }
 
-img {
+.md img {
   border: 0
 }
 
-svg:not(:root) {
+.md svg:not(:root) {
   overflow: hidden
 }
 
-figure {
+.md figure {
   margin: 1em 40px
 }
 
-hr {
+.md hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0
 }
 
-pre {
+.md pre {
   overflow: auto
 }
 
-code,
-kbd,
-pre,
-samp {
+.md code,
+.md kbd,
+.md pre,
+.md samp {
   font-family: monospace, monospace;
   font-size: 1em
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  font: inherit;
-  margin: 0
-}
-
-button {
-  overflow: visible
-}
-
-button,
-select {
-  text-transform: none
-}
-
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer
-}
-
-button[disabled],
-html input[disabled] {
-  cursor: default
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0
-}
-
-input {
-  line-height: normal
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto
-}
-
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box
-}
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none
-}
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em
-}
-
-legend {
-  border: 0;
-  padding: 0
-}
-
-textarea {
-  overflow: auto
-}
-
-optgroup {
+.md optgroup {
   font-weight: bold
 }
 
-table {
+.md table {
   border-collapse: collapse;
   border-spacing: 0
 }
 
-td,
-th {
+.md td,
+.md th {
   padding: 0
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box
-}
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box
-}
-
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: transparent
-}
-
-body {
-  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft Yahei", sans-serif;
-  font-size: 14px;
-  line-height: 1.42858;
-  color: #333;
-  background-color: #fff;
-  -webkit-font-smoothing: antialiased
-}
-
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit
-}
-
-a {
-  color: #009a61;
-  text-decoration: none
-}
-
-a:hover,
-a:focus {
-  color: #004e31;
-  text-decoration: underline
-}
-
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px
-}
-
-figure {
+.md figure {
   margin: 0
 }
 
-img {
+.md img {
   vertical-align: middle
 }
 
-hr {
+.md hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+.md 1,
+.md 2,
+.md 3,
+.md 4,
+.md 5,
+.md 6,
+.md h1,
+.md h2,
+.md h3,
+.md h4,
+.md h5,
+.md h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
   color: inherit
 }
 
-h1 small,
-h1 .small,
-h2 small,
-h2 .small,
-h3 small,
-h3 .small,
-h4 small,
-h4 .small,
-h5 small,
-h5 .small,
-h6 small,
-h6 .small,
-.h1 small,
-.h1 .small,
-.h2 small,
-.h2 .small,
-.h3 small,
-.h3 .small,
-.h4 small,
-.h4 .small,
-.h5 small,
-.h5 .small,
-.h6 small,
-.h6 .small {
+.md h1 small,
+.md h1 .small,
+.md h2 small,
+.md h2 .small,
+.md h3 small,
+.md h3 .small,
+.md h4 small,
+.md h4 .small,
+.md h5 small,
+.md h5 .small,
+.md h6 small,
+.md h6 .small,
+.md .h1 small,
+.md .h1 .small,
+.md .h2 small,
+.md .h2 .small,
+.md .h3 small,
+.md .h3 .small,
+.md .h4 small,
+.md .h4 .small,
+.md .h5 small,
+.md .h5 .small,
+.md .h6 small,
+.md .h6 .small {
   font-weight: normal;
   line-height: 1;
   color: #777
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
+.md h1,
+.md .h1,
+.md h2,
+.md .h2,
+.md h3,
+.md .h3 {
   margin-top: 20px;
   margin-bottom: 10px
 }
 
-h1 small,
-h1 .small,
-.h1 small,
-.h1 .small,
-h2 small,
-h2 .small,
-.h2 small,
-.h2 .small,
-h3 small,
-h3 .small,
-.h3 small,
-.h3 .small {
+.md h1 small,
+.md h1 .small,
+.md .h1 small,
+.md .h1 .small,
+.md h2 small,
+.md h2 .small,
+.md .h2 small,
+.md .h2 .small,
+.md h3 small,
+.md h3 .small,
+.md .h3 small,
+.md .h3 .small {
   font-size: 65%
 }
 
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+.md h4,
+.md .h4,
+.md h5,
+.md .h5,
+.md h6,
+.md .h6 {
   margin-top: 10px;
   margin-bottom: 10px
 }
 
-h4 small,
-h4 .small,
-.h4 small,
-.h4 .small,
-h5 small,
-h5 .small,
-.h5 small,
-.h5 .small,
-h6 small,
-h6 .small,
-.h6 small,
-.h6 .small {
+.md h4 small,
+.md h4 .small,
+.md .h4 small,
+.md .h4 .small,
+.md h5 small,
+.md h5 .small,
+.md .h5 small,
+.md .h5 .small,
+.md h6 small,
+.md h6 .small,
+.md .h6 small,
+.md .h6 .small {
   font-size: 75%
 }
 
-h1,
-.h1 {
+.md h1,
+.md .h1 {
   font-size: 36px
 }
 
-h2,
-.h2 {
+.md h2,
+.md .h2 {
   font-size: 30px
 }
 
-h3,
-.h3 {
+.md h3,
+.md .h3 {
   font-size: 24px
 }
 
-h4,
-.h4 {
+.md h4,
+.md .h4 {
   font-size: 18px
 }
 
-h5,
-.h5 {
+.md h5,
+.md .h5 {
   font-size: 14px
 }
 
-h6,
-.h6 {
+.md h6,
+.md .h6 {
   font-size: 12px
 }
 
-p {
+.md p {
   margin: 0 0 10px
 }
 
-ul,
-ol {
+.md ul,
+.md ol {
   margin-top: 0;
   margin-bottom: 10px
 }
 
-dl {
+.md dl {
   margin-top: 0;
   margin-bottom: 20px
 }
 
-dt,
-dd {
+.md dt,
+.md dd {
   line-height: 1.42858
 }
 
-dt {
+.md dt {
   font-weight: bold
 }
 
-dd {
+.md dd {
   margin-left: 0
 }
 
-abbr[title],
-abbr[data-original-title] {
+.md abbr[title],
+.md abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777
 }
 
-blockquote {
+.md blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 14px;
   border-left: 5px solid #eee
 }
 
-blockquote p:last-child,
-blockquote ul:last-child,
-blockquote ol:last-child {
+.md blockquote p:last-child,
+.md blockquote ul:last-child,
+.md blockquote ol:last-child {
   margin-bottom: 0
 }
 
-blockquote footer,
-blockquote small,
-blockquote .small {
+.md blockquote footer,
+.md blockquote small,
+.md blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42858;
   color: #777
 }
 
-blockquote footer:before,
-blockquote small:before,
-blockquote .small:before {
+.md blockquote footer:before,
+.md blockquote small:before,
+.md blockquote .small:before {
   content: '\2014 \00A0'
 }
 
-blockquote:before,
-blockquote:after {
+.md blockquote:before,
+.md blockquote:after {
   content: ""
 }
 
-address {
-  margin-bottom: 20px;
-  font-style: normal;
-  line-height: 1.42858
-}
-
-code,
-kbd,
-pre,
-samp {
+.md code,
+.md kbd,
+.md pre,
+.md samp {
   font-family: "Source Code Pro", Consolas, Menlo, Monaco, "Courier New", monospace
 }
 
-code {
+.md code {
   padding: 2px 4px;
   font-size: 90%;
   color: #c7254e;
@@ -500,7 +305,7 @@ code {
   border-radius: 4px
 }
 
-kbd {
+.md kbd {
   padding: 2px 4px;
   font-size: 90%;
   color: #fff;
@@ -509,13 +314,13 @@ kbd {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25)
 }
 
-kbd kbd {
+.md kbd kbd {
   padding: 0;
   font-size: 100%;
   box-shadow: none
 }
 
-pre {
+.md pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
@@ -529,7 +334,7 @@ pre {
   border-radius: 4px
 }
 
-pre code {
+.md pre code {
   padding: 0;
   font-size: inherit;
   color: inherit;
@@ -538,11 +343,11 @@ pre code {
   border-radius: 0
 }
 
-table {
+.md table {
   background-color: transparent
 }
 
-th {
+.md th {
   text-align: left
 }
 
@@ -551,75 +356,6 @@ fieldset {
   margin: 0;
   border: 0;
   min-width: 0
-}
-
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 20px;
-  font-size: 21px;
-  line-height: inherit;
-  color: #333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5
-}
-
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold
-}
-
-input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal
-}
-
-input[type="file"] {
-  display: block
-}
-
-input[type="range"] {
-  display: block;
-  width: 100%
-}
-
-select[multiple],
-select[size] {
-  height: auto
-}
-
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px
-}
-
-output {
-  display: block;
-  padding-top: 7px;
-  font-size: 14px;
-  line-height: 1.42858;
-  color: #555
-}
-
-a,
-a:hover,
-a:active,
-a:focus {
-  outline: 0
 }
 
 .md {
@@ -816,6 +552,6 @@ a:focus {
   text-decoration: none
 }
 
-textarea {
+.md textarea {
   resize: vertical
 }
