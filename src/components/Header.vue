@@ -1,24 +1,16 @@
-<template>
-  <div class="header-wrap">
-    <Nav />
-    <Banner />
-  </div>
-</template>
-
 <script>
-  import Banner from '@/components/Banner'
-  import Nav from '@/components/Nav'
+import Nav from "@/components/Nav";
+import Banner from "@/components/Banner";
 
-  export default {
-    components: {
-      Banner,
-      Nav
-    }
+export default {
+  functional: true,
+  render() {
+    return (
+      <div class="header-wrap" style={{marginBottom: '40px'}}>
+        <Nav />
+        <Banner />
+      </div>
+    )
   }
-
+};
 </script>
-
-<style scoped lang="stylus">
-
-
-</style>

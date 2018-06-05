@@ -1,5 +1,5 @@
 <script>
-  import data from '@/service/mock.json'
+  import data from '@/service/mock.js'
   export default {
     data() {
       return {
@@ -46,18 +46,15 @@
 
 <style scoped lang="stylus">
   @import "../../style/mix.styl"
-  .article-wrap
-    max-width $article-list-width
-    margin 20px auto
-    padding 0 10px
   .article__ul
     padding-bottom 100px
     li
-      margin-top 25px
       padding 28px
       border-radius 6px
       background-color #fff
       transition(.3s)
+      &:not(:last-child)
+        margin-bottom 25px
       &:hover
         box-shadow 0 0 30px rgba(35, 180, 226, 0.2)
       h2

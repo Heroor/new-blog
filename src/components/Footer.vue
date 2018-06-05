@@ -1,33 +1,36 @@
-<template>
-  <div class="footer-wrap">
-    <p class="footer__hosted">
-      <span>Hosted by</span>
-      <a class="footer__strong" href="https://pages.coding.me">Coding Pages</a>
-      <span> | Made by </span>
-      <span class="footer__strong">Bener</span>
-    </p>
-  </div>
-</template>
-
-
 <script>
-  export default {
-
+export default {
+  functional: true,
+  render() {
+    return (
+      <div class="footer-wrap">
+        <p class="footer__hosted">
+          <span>Hosted by </span>
+          <b><a class="footer__strong" href="https://pages.coding.me">Coding Pages</a></b>
+          <span> | Made by </span>
+          <b class="footer__strong">Bener</b>
+        </p>
+      </div>
+    );
   }
-
+};
 </script>
 
 <style scoped lang="stylus">
-  @import "../style/mix.styl"
-  .footer-wrap
-    margin-top 20px
-  .footer__hosted
-    line-height 3
-    text-align center
-    color #999
- .footer__strong
-    font-weight: bold
-    color #587f8c
+@import '../style/mix.styl';
 
+.footer-wrap {
+  margin-top: 20px;
+}
+
+.footer__hosted {
+  line-height: 3;
+  text-align: center;
+  color: #999;
+}
+
+.footer__strong {
+  color: #587f8c;
+}
 </style>
 

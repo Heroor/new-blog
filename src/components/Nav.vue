@@ -30,7 +30,7 @@
 <style scoped lang="stylus">
   @import "../style/mix.styl"
   .nav-ul
-    height 50px
+    height 68px
     text-align center
     padding-bottom 18px
     font-size 15px
