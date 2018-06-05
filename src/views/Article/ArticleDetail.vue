@@ -1,19 +1,60 @@
 <script>
+import data from "@/service/mock.js"
 export default {
-  functional: true,
-  render(h, context) {
-    const { id } = context.parent.$route.params
+  data() {
+    return {
+      map: {
+        title: "",
+        desc: "",
+        poster: "",
+        content: "",
+        date: "",
+        id: null
+      }
+    }
+  },
+  mounted() {
+    const { id } = this.$route.params
+    setTimeout(() => {
+      this.map = data.mapList.find(v => v.id === id)
+    }, 200)
+  },
+  render() {
+    const { title, desc, poster, content, date } = this.map
+    this.$refs.contentContainer &&
+      (this.$refs.contentContainer.innerHTML = content || "")
     return (
       <div class="detail__wrap">
-        id: {id}
+        <h1 class="title t-a--c">{title}</h1>
+        <p class="desc">{desc}</p>
+        <div ref="contentContainer" class="content md" />
+        <div class="date">{date}</div>
       </div>
     )
   }
 }
 </script>
 
+<style src="@/style/markdown.css"></style>
 <style scoped lang="stylus">
+@import '../../style/mix.styl'
+
 .detail__wrap
-  // height 500px
-  // border 1px solid #000
+  min-height 200px
+  padding 20px 40px
+  border-radius 6px
+  background #fff
+.title
+  padding 30px 0
+  font-size $font-title + 5px
+  color $font-color-title
+.desc
+  padding 10px 0
+  font-size $font-content
+.content
+  margin-top 20px
+  font-size $font-content
+.date
+  margin-top 50px
+  padding 20px 0
 </style>
