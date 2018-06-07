@@ -2,7 +2,7 @@
     title: 'third',
     poster: 'http://localhost:1314/static/img/banner.6f46f90.jpg',
     date: new Date().toLocaleDateString(),
-    id: '',
+    id: '3',
     desc: 'this is a desc of test content'
 }}
 # third article

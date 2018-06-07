@@ -1,8 +1,15 @@
+{{
+    title: 'two',
+    poster: 'http://localhost:1314/static/img/banner.6f46f90.jpg',
+    date: new Date().toLocaleDateString(),
+    id: '2',
+    desc: 'this is a desc of test content 22222'
+}}
 # header1
 ## header2
 ### header3
 
-> This is a nice work 11111
+> This is a nice work -- 222222
 
 ```javascript
 function foo (arg) {

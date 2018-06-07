@@ -1,5 +1,6 @@
 <script>
   import data from '@/service/mock.js'
+  console.log(data)
   export default {
     data() {
       return {
