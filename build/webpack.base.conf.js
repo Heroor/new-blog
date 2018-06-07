@@ -42,7 +42,7 @@ module.exports = {
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
-        test: /\.md$/,
+        test: /\.mdjs$/,
         use: [{
           loader: path.resolve(__dirname + '/loaders/markdown-js-loader.js')
         }]
