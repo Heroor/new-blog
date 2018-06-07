@@ -17,8 +17,8 @@
           <ul class="article__ul">
             {
               this.articleList.map((v, i) =>
-                <li key={i}>
-                  <h2 class="w-b--b-a">
+                <li key={i} class="article-item">
+                  <h2 class="w-b--b-a article__title-wrap">
                     <router-link to={'article/' + v.id} class="article__title">{v.title}</router-link>
                   </h2>
                   <div class="article__content">
@@ -48,7 +48,7 @@
   @import "../../style/mix.styl"
   .article__ul
     padding-bottom 100px
-    li
+    .article-item
       padding 28px
       border-radius 6px
       background-color #fff
@@ -57,7 +57,7 @@
         margin-bottom 25px
       &:hover
         box-shadow 0 0 30px rgba(35, 180, 226, 0.2)
-      h2
+      .article__title-wrap
         font-weight bold
         text-align center
         margin-bottom 30px

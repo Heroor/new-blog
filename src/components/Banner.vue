@@ -4,7 +4,7 @@
       'simple': !bannerSrc
     }">
     <div class="banner-container position--align-c">
-      <img :src="bannerSrc" ondragstart="return false" class="transition-05 position--align-c">
+      <img :src="bannerSrc" ondragstart="return false" class="banner transition-05 position--align-c">
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@
       width 280%
       border-radius 50% 50% 0 0
       background $page-bg
-      img
+      .banner
         max-width 100vw
         min-width 760px
 </style>

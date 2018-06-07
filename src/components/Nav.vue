@@ -1,7 +1,7 @@
 <template>
   <div class="nav-wrap">
     <ul class="nav-ul">
-      <li v-for="(v, i) in navList" :key="i">
+      <li class="nav-item" v-for="(v, i) in navList" :key="i">
         <router-link :to="v.link" class="underline">
           {{v.name}}
         </router-link>
@@ -35,7 +35,7 @@
     padding-bottom 18px
     font-size 15px
     background $nav-bg
-    li
+    .nav-item
       display inline-block
       margin 0 10px
       a
