@@ -27,8 +27,12 @@ export default new Router({
       }]
     }, {
       path: '/info',
-      name: 'info',
       component: MainContainer,
+      children: [{
+        path: '/',
+        name: 'infoPage',
+        component: _import('Info')
+      }]
     }]
   }, {
     path: '*',
