@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ArticleContainer from '@/views/Article/Container.vue'
+import MainContainer from '@/views/MainContainer.vue'
 import Layout from '@/views/Layout.vue'
 
 const _import = path => () => import('@/views/' + path)
@@ -15,7 +15,7 @@ export default new Router({
       path: '/',
       redirect: '/article',
       alias: '/article',
-      component: ArticleContainer,
+      component: MainContainer,
       children: [{
         path: '/article',
         name: 'ArticleList',
@@ -28,9 +28,7 @@ export default new Router({
     }, {
       path: '/info',
       name: 'info',
-      component: {
-        template: '<div>info page</div>'
-      }
+      component: MainContainer,
     }]
   }, {
     path: '*',

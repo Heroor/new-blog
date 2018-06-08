@@ -1,14 +1,14 @@
 <template>
-  <div class="article-container">
+  <div class="main-container">
     <router-view/>
   </div>
 </template>
 
 <style scoped lang="stylus">
-@import '../../style/mix.styl';
+@import '../style/mix.styl';
 
-.article-container {
-  width: $article-container-width;
+.main-container {
+  max-width: $container-width;
   padding: 0 10px;
   margin: 0 auto;
 }
