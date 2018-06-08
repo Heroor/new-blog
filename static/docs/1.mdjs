@@ -1,6 +1,6 @@
 {{
     title: 'one',
-    poster: 'http://localhost:1314/static/img/banner.6f46f90.jpg',
+    poster: '../static/poster.png',
     date: new Date().toLocaleDateString(),
     id: '1',
     desc: 'this is a desc of test content 11111'
