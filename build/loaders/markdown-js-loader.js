@@ -4,7 +4,7 @@ const md = require("markdown-it")();
 // const loaderUtils = require("loader-utils");
 
 module.exports = function (markdown) {
-    var reg = /\{(\{[\s\w:',\/\.\(\)]*\})\}/g
+    var reg = /\{(\{[\s\u4e00-\u9fa5\w\d\-=~!@#$%^&*()+`\/\.\[\]\{\}\\\|;':",.<>\?]*\})\}/g
     var info, infoMatch
     // merge params and default config
     // const options = loaderUtils.getOptions(this);
