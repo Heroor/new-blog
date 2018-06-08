@@ -15,9 +15,7 @@ export default {
   },
   mounted() {
     const { id } = this.$route.params
-    setTimeout(() => {
-      this.map = data.mapList.find(v => v.id === id)
-    }, 200)
+    this.map = data.mapList.find(v => v.id === id)
   },
   render() {
     const { title, desc, poster, content, date } = this.map

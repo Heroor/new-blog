@@ -8,9 +8,7 @@
       }
     },
     mounted() {
-      setTimeout(() => {
-        this.articleList = data.mapList
-      }, 100);
+      this.articleList = data.mapList
     },
     render() {
       return (
@@ -79,10 +77,10 @@
     flex 1
     margin-bottom 20px
     min-height 50px
-    font-size $font-content + 2px
+    font-size $font-content + 2
     color $font-color-content
   .article__date
-    font-size $font-tips
+    font-size $font-tips + 2
     color #858585
   .article__right
     display flex
