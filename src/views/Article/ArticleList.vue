@@ -58,14 +58,13 @@
         margin-bottom 25px
       &:hover
         box-shadow 0 0 30px rgba(35, 180, 226, 0.2)
-      .article__title-wrap
-        font-weight bold
-        text-align center
-        margin-bottom 30px
+  .article__title-wrap
+    font-weight bold
+    text-align center
+    margin-bottom 36px
   .article__title
     display inline-block
     font-size $font-title
-    transition(.4s)
     color $font-color-title
     &:hover
       color $nav-bg
@@ -80,7 +79,7 @@
     flex 1
     margin-bottom 20px
     min-height 50px
-    font-size $font-content
+    font-size $font-content + 2px
     color $font-color-content
   .article__date
     font-size $font-tips
@@ -99,6 +98,10 @@
     transition(.4s)
 
   @media screen and (max-width 640px)
+    .article__title
+      font-size $font-title - 2
+    .article__desc
+      font-size $font-content
     .article__content
       flex-wrap wrap
       flex-direction column-reverse
@@ -112,8 +115,8 @@
       max-height 200px
   @media screen and (max-width 300px)
     .article__img
-      max-width 120px
-      max-height 120px
+      max-width 100px
+      max-height 100px
   @media screen and (max-width 200px)
     .article__right
       margin 0

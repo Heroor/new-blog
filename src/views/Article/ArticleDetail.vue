@@ -26,7 +26,7 @@ export default {
     return (
       <div class="detail__wrap">
         <h1 class="title t-a--c">{title}</h1>
-        <p class="desc">{desc}</p>
+        {/*<p class="desc">{desc}</p>*/}
         <div ref="contentContainer" class="content md" />
         <div class="date">{date}</div>
       </div>
@@ -45,16 +45,20 @@ export default {
   border-radius 6px
   background #fff
 .title
-  padding 30px 0
+  padding 50px 0 100px
   font-size $font-title + 5px
   color $font-color-title
 .desc
   padding 10px 0
-  font-size $font-content
+  font-size $font-content + 2px
 .content
   margin-top 20px
   font-size $font-content
 .date
   margin-top 50px
   padding 20px 0
+.md >>> ul
+  list-style disc
+.md >>> ol
+  list-style decimal
 </style>
