@@ -8,7 +8,9 @@ export default {
           <span>Hosted by </span>
           <b><a class="footer__strong" href="https://pages.coding.me">Coding Pages</a></b>
           <span> | Made by </span>
-          <b class="footer__strong">Bener</b>
+          <a href="https://github.com/Heroor" target="_black">
+            <b class="footer__strong">Bener</b>
+          </a>
         </p>
       </div>
     );
